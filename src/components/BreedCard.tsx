@@ -1,0 +1,59 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+interface BreedInfo {
+  question: string;
+  answer: string;
+}
+
+interface BreedCardProps {
+  id: string;
+  name: string;
+  subtitle: string;
+  imageSrc: string;
+  imageAlt: string;
+  description: string;
+  details: BreedInfo[];
+}
+
+const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, details }: BreedCardProps) => {
+  return (
+    <article id={id} className="breed-card animate-fade-in">
+      <div className="aspect-square overflow-hidden">
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+      <div className="p-5">
+        <h3 className="text-xl font-display font-bold text-foreground">{name}</h3>
+        <p className="text-xs font-body text-accent font-semibold uppercase tracking-wider mt-1 mb-3">
+          {subtitle}
+        </p>
+        <p className="text-sm font-body text-muted-foreground leading-relaxed mb-4">
+          {description}
+        </p>
+        <Accordion type="single" collapsible className="w-full">
+          {details.map((detail, i) => (
+            <AccordionItem key={i} value={`item-${i}`} className="border-border">
+              <AccordionTrigger className="text-sm font-body font-medium text-foreground hover:text-accent py-3">
+                {detail.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-body text-muted-foreground leading-relaxed">
+                {detail.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </article>
+  );
+};
+
+export default BreedCard;
