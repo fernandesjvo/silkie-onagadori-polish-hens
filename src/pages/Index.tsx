@@ -75,10 +75,36 @@ const Index = () => {
             ))}
           </div>
 
-          <footer id="about" className="border-t border-border pt-8 pb-12 text-center">
-            <p className="text-sm font-body text-muted-foreground">
-              Feito com 🐔 para amantes de galinhas ornamentais — 2026
-            </p>
+          <footer id="about" className="bg-primary text-primary-foreground -mx-6 px-6 py-12 mt-16 rounded-t-2xl">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-lg font-display font-bold mb-3">Galinhas Ornamentais</h3>
+                <p className="text-sm text-primary-foreground/70 leading-relaxed">
+                  Descubra a beleza e a história por trás das raças de galinhas mais fascinantes do mundo.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-sm font-body font-semibold uppercase tracking-wider mb-3 text-accent">Sitemap</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="#home" className="text-primary-foreground/70 hover:text-accent transition-colors">Início</a></li>
+                  <li><a href="#breeds" className="text-primary-foreground/70 hover:text-accent transition-colors">Espécies em Destaque</a></li>
+                  <li><a href="#silkie" className="text-primary-foreground/70 hover:text-accent transition-colors">Sedosa do Japão</a></li>
+                  <li><a href="#onagadori" className="text-primary-foreground/70 hover:text-accent transition-colors">Onagadori</a></li>
+                  <li><a href="#polonesa" className="text-primary-foreground/70 hover:text-accent transition-colors">Polonesa</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-sm font-body font-semibold uppercase tracking-wider mb-3 text-accent">Contato</h4>
+                <p className="text-sm text-primary-foreground/70 leading-relaxed">
+                  contato@galinhasornamentais.com
+                </p>
+              </div>
+            </div>
+            <div className="max-w-5xl mx-auto mt-8 pt-6 border-t border-primary-foreground/15 text-center">
+              <p className="text-xs text-primary-foreground/50">
+                © 2026 Galinhas Ornamentais — Feito com 🐔
+              </p>
+            </div>
           </footer>
         </div>
       </main>
