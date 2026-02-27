@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -55,6 +56,7 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
           ))}
         </Accordion>
         <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold">
+          <ShoppingCart className="h-4 w-4 mr-2" aria-hidden="true" />
           Comprar
         </Button>
       </div>
