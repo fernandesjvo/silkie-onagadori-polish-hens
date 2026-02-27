@@ -35,7 +35,7 @@ const Sidebar = ({ onNavigate }: SidebarProps) => {
       </nav>
       <div className="absolute bottom-0 left-0 right-0 p-5 border-t border-sidebar-border">
         <p className="text-xs text-sidebar-foreground/40 font-body">
-          © 2026 Galinhas Ornamentais
+          © 2026 Cocoricó Collections
         </p>
       </div>
     </aside>

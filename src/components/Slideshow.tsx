@@ -40,7 +40,7 @@ const Slideshow = () => {
       className="relative w-full h-[420px] rounded-lg overflow-hidden shadow-lg"
       role="region"
       aria-roledescription="Carrossel de imagens"
-      aria-label="Destaques de galinhas ornamentais"
+      aria-label="Destaques — Cocoricó Collections"
     >
       {slides.map((slide, i) => (
         <img

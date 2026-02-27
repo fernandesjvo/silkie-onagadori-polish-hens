@@ -77,7 +77,7 @@ const Index = () => {
           <footer id="about" className="bg-primary text-primary-foreground -mx-6 px-6 py-12 mt-16 rounded-t-2xl" aria-label="Rodapé do site">
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-lg font-display font-bold mb-3">Galinhas Ornamentais</h3>
+                <h3 className="text-lg font-display font-bold mb-3">Cocoricó Collections</h3>
                 <p className="text-sm text-primary-foreground/70 leading-relaxed">
                   Descubra a beleza e a história por trás das raças de galinhas mais fascinantes do mundo.
                 </p>
@@ -99,7 +99,7 @@ const Index = () => {
             </div>
             <div className="max-w-5xl mx-auto mt-8 pt-6 border-t border-primary-foreground/15 text-center">
               <p className="text-xs text-primary-foreground/50">
-                © 2026 Galinhas Ornamentais — Feito com 🐔
+                © 2026 Cocoricó Collections — Feito com 🐔
               </p>
             </div>
           </footer>

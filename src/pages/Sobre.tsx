@@ -47,7 +47,7 @@ const Sobre = () => {
             <h2 className="text-2xl font-display font-bold text-foreground">Nossa História</h2>
           </div>
           <p className="text-sm font-body text-muted-foreground leading-relaxed">
-            O projeto Galinhas Ornamentais nasceu da fascinação por essas aves incríveis que, ao longo de séculos, foram selecionadas não apenas por sua utilidade, mas também por sua beleza extraordinária. Cada raça conta uma história — de culturas antigas, de criadores dedicados e de uma conexão profunda entre o ser humano e a natureza.
+            O projeto Cocoricó Collections nasceu da fascinação por essas aves incríveis que, ao longo de séculos, foram selecionadas não apenas por sua utilidade, mas também por sua beleza extraordinária. Cada raça conta uma história — de culturas antigas, de criadores dedicados e de uma conexão profunda entre o ser humano e a natureza.
           </p>
           <p className="text-sm font-body text-muted-foreground leading-relaxed">
             Nosso objetivo é criar o maior catálogo online de raças ornamentais em língua portuguesa, oferecendo informações detalhadas, fotos de qualidade e orientações para criadores iniciantes e experientes. Acreditamos que conhecer essas raças é o primeiro passo para preservá-las.
