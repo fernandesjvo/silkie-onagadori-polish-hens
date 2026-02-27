@@ -1,5 +1,4 @@
 import SiteHeader from "@/components/SiteHeader";
-import Sidebar from "@/components/Sidebar";
 import Slideshow from "@/components/Slideshow";
 import BreedCard from "@/components/BreedCard";
 
@@ -17,21 +16,9 @@ const breeds = [
     description:
       "Conhecida por sua plumagem sedosa que lembra pelos ao invés de penas, a Sedosa do Japão é uma das raças mais antigas e dóceis do mundo. Possui pele e ossos escuros, além de cinco dedos em cada pé.",
     details: [
-      {
-        question: "Origem e História",
-        answer:
-          "Originária da China, a Sedosa é mencionada por Marco Polo em suas viagens no século XIII. Foi introduzida na Europa e Japão onde se tornou extremamente popular como ave ornamental e de companhia.",
-      },
-      {
-        question: "Características Físicas",
-        answer:
-          "Plumagem sedosa sem barbicelas, pele azul-escura/preta, crista em noz, cinco dedos, plumagem abundante nos tarsos. Peso médio de 1,3 a 1,8 kg.",
-      },
-      {
-        question: "Temperamento",
-        answer:
-          "Extremamente dócil e amigável, sendo excelente para famílias com crianças. São ótimas mães e frequentemente usadas para chocar ovos de outras espécies.",
-      },
+      { question: "Origem e História", answer: "Originária da China, a Sedosa é mencionada por Marco Polo em suas viagens no século XIII. Foi introduzida na Europa e Japão onde se tornou extremamente popular como ave ornamental e de companhia." },
+      { question: "Características Físicas", answer: "Plumagem sedosa sem barbicelas, pele azul-escura/preta, crista em noz, cinco dedos, plumagem abundante nos tarsos. Peso médio de 1,3 a 1,8 kg." },
+      { question: "Temperamento", answer: "Extremamente dócil e amigável, sendo excelente para famílias com crianças. São ótimas mães e frequentemente usadas para chocar ovos de outras espécies." },
     ],
   },
   {
@@ -43,21 +30,9 @@ const breeds = [
     description:
       "A Onagadori é uma lendária raça japonesa cuja cauda pode atingir comprimentos impressionantes de até 10 metros. É considerada Monumento Natural do Japão desde 1952.",
     details: [
-      {
-        question: "Origem e História",
-        answer:
-          "Desenvolvida na província de Kōchi, Japão, durante o período Edo. Criadores selecionaram cuidadosamente aves com o gene de cauda que não muda, permitindo crescimento contínuo por anos.",
-      },
-      {
-        question: "Características Físicas",
-        answer:
-          "As penas da cauda crescem continuamente sem muda, podendo ultrapassar 10 metros. Plumagem rica em tons de vermelho, dourado e preto. Porte elegante e altivo.",
-      },
-      {
-        question: "Cuidados Especiais",
-        answer:
-          "Requer poleiros altos e caixas especiais para proteger a cauda. Necessita de alimentação balanceada rica em proteínas para o crescimento saudável das penas.",
-      },
+      { question: "Origem e História", answer: "Desenvolvida na província de Kōchi, Japão, durante o período Edo. Criadores selecionaram cuidadosamente aves com o gene de cauda que não muda, permitindo crescimento contínuo por anos." },
+      { question: "Características Físicas", answer: "As penas da cauda crescem continuamente sem muda, podendo ultrapassar 10 metros. Plumagem rica em tons de vermelho, dourado e preto. Porte elegante e altivo." },
+      { question: "Cuidados Especiais", answer: "Requer poleiros altos e caixas especiais para proteger a cauda. Necessita de alimentação balanceada rica em proteínas para o crescimento saudável das penas." },
     ],
   },
   {
@@ -69,39 +44,19 @@ const breeds = [
     description:
       "A Polonesa é famosa por sua crista espetacular em forma de coroa. Apesar do nome, acredita-se que tenha origem na Holanda. É uma das aves ornamentais mais reconhecíveis do mundo.",
     details: [
-      {
-        question: "Origem e História",
-        answer:
-          "Apesar do nome, suas origens mais prováveis são a Holanda e a Europa Oriental. Aparece em pinturas holandesas do século XVI e foi popular entre a nobreza europeia.",
-      },
-      {
-        question: "Características Físicas",
-        answer:
-          "Crista proeminente em forma de V coberta por penas longas e volumosas. Disponível em diversas cores: branco, preto, dourado, prateado e combinações com bordas. Peso de 2 a 2,7 kg.",
-      },
-      {
-        question: "Temperamento e Criação",
-        answer:
-          "Geralmente dócil, porém pode ser nervosa devido à visão limitada pela crista. Recomenda-se aparar as penas da crista para melhor visibilidade. Boa produção de ovos brancos.",
-      },
+      { question: "Origem e História", answer: "Apesar do nome, suas origens mais prováveis são a Holanda e a Europa Oriental. Aparece em pinturas holandesas do século XVI e foi popular entre a nobreza europeia." },
+      { question: "Características Físicas", answer: "Crista proeminente em forma de V coberta por penas longas e volumosas. Disponível em diversas cores: branco, preto, dourado, prateado e combinações com bordas. Peso de 2 a 2,7 kg." },
+      { question: "Temperamento e Criação", answer: "Geralmente dócil, porém pode ser nervosa devido à visão limitada pela crista. Recomenda-se aparar as penas da crista para melhor visibilidade. Boa produção de ovos brancos." },
     ],
   },
 ];
-
-const handleNavigate = (id: string) => {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-};
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <Sidebar onNavigate={handleNavigate} />
 
-      <main
-        className="pt-[var(--header-height)] pl-[var(--sidebar-width)]"
-        role="main"
-      >
+      <main className="pt-[var(--header-height)]" role="main">
         <div className="p-6 max-w-5xl mx-auto space-y-10">
           <Slideshow />
 
