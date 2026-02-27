@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
@@ -51,6 +52,9 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
             </AccordionItem>
           ))}
         </Accordion>
+        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold">
+          Comprar
+        </Button>
       </div>
     </article>
   );
