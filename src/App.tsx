@@ -17,7 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/Cocorico-collections">
-        <a href="#main-content" className="skip-link">
+        <a href="#breeds" className="skip-link">
           Pular para o conteúdo principal
         </a>
         <SiteHeader />
