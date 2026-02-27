@@ -1,26 +1,46 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocoricó Collections — Galinhas Ornamentais</title>
-    <meta name="description" content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
-    <meta name="author" content="Cocoricó Collections" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Cocoricó Collections — Galinhas Ornamentais">
-    <meta property="og:description" content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/148178e5-dcd6-4ae8-9a49-792d03ef0485/id-preview-5a4a4f64--65de8782-17ad-41a4-818f-c8c94b4f11ac.lovable.app-1772205372546.png">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocoricó Collections — Galinhas Ornamentais</title>
+  <meta name="description"
+    content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
+  <meta name="author" content="Cocoricó Collections" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:title" content="Cocoricó Collections — Galinhas Ornamentais">
-    <meta name="twitter:description" content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/148178e5-dcd6-4ae8-9a49-792d03ef0485/id-preview-5a4a4f64--65de8782-17ad-41a4-818f-c8c94b4f11ac.lovable.app-1772205372546.png">
-  </head>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cocoricó Collections — Galinhas Ornamentais">
+  <meta property="og:description"
+    content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
+  <meta property="og:image"
+    content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/148178e5-dcd6-4ae8-9a49-792d03ef0485/id-preview-5a4a4f64--65de8782-17ad-41a4-818f-c8c94b4f11ac.lovable.app-1772205372546.png">
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Lovable" />
+  <meta name="twitter:title" content="Cocoricó Collections — Galinhas Ornamentais">
+  <meta name="twitter:description"
+    content="Descubra as raças de galinhas mais fascinantes: Sedosa do Japão, Onagadori e Polonesa.">
+  <meta name="twitter:image"
+    content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/148178e5-dcd6-4ae8-9a49-792d03ef0485/id-preview-5a4a4f64--65de8782-17ad-41a4-818f-c8c94b4f11ac.lovable.app-1772205372546.png">
+</head>
+
+<body>
+  <!-- GitHub Pages SPA redirect handler -->
+  <script>
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

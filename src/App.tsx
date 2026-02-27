@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/Cocorico-collections">
         <a href="#main-content" className="skip-link">
           Pular para o conteúdo principal
         </a>
