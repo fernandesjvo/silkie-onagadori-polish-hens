@@ -1,4 +1,4 @@
-import SiteHeader from "@/components/SiteHeader";
+import { Link } from "react-router-dom";
 import Slideshow from "@/components/Slideshow";
 import BreedCard from "@/components/BreedCard";
 
@@ -54,7 +54,6 @@ const breeds = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SiteHeader />
 
       <main className="pt-[var(--header-height)]" role="main">
         <div className="p-6 max-w-5xl mx-auto space-y-10">
@@ -86,11 +85,9 @@ const Index = () => {
               <div>
                 <h4 className="text-sm font-body font-semibold uppercase tracking-wider mb-3 text-accent">Sitemap</h4>
                 <ul className="space-y-2 text-sm">
-                  <li><a href="#home" className="text-primary-foreground/70 hover:text-accent transition-colors">Início</a></li>
-                  <li><a href="#breeds" className="text-primary-foreground/70 hover:text-accent transition-colors">Espécies em Destaque</a></li>
-                  <li><a href="#silkie" className="text-primary-foreground/70 hover:text-accent transition-colors">Sedosa do Japão</a></li>
-                  <li><a href="#onagadori" className="text-primary-foreground/70 hover:text-accent transition-colors">Onagadori</a></li>
-                  <li><a href="#polonesa" className="text-primary-foreground/70 hover:text-accent transition-colors">Polonesa</a></li>
+                  <li><Link to="/" className="text-primary-foreground/70 hover:text-accent transition-colors">Início</Link></li>
+                  <li><Link to="/especies" className="text-primary-foreground/70 hover:text-accent transition-colors">Todas as Espécies</Link></li>
+                  <li><Link to="/sobre" className="text-primary-foreground/70 hover:text-accent transition-colors">Sobre</Link></li>
                 </ul>
               </div>
               <div>
