@@ -133,7 +133,7 @@ const allBreeds = [
 const Especies = () => {
   return (
     <div className="min-h-screen bg-background pt-[var(--header-height)]">
-      <main className="max-w-6xl mx-auto px-6 py-10 space-y-10">
+      <main id="main-content" className="max-w-6xl mx-auto px-6 py-10 space-y-10">
         <header className="space-y-3">
           <h1 className="text-3xl font-display font-bold text-foreground">
             Todas as Espécies
@@ -143,7 +143,7 @@ const Especies = () => {
           </p>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" aria-label="Catálogo de raças ornamentais">
           {allBreeds.map((breed) => (
             <BreedCard key={breed.id} {...breed} />
           ))}

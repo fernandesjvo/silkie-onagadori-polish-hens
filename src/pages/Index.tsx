@@ -55,11 +55,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
 
-      <main className="pt-[var(--header-height)]" role="main">
+      <main id="main-content" className="pt-[var(--header-height)]">
         <div className="p-6 max-w-5xl mx-auto space-y-10">
           <Slideshow />
 
-          <section id="breeds" className="space-y-3">
+          <section id="breeds" className="space-y-3" aria-label="Espécies em destaque">
             <h2 className="text-2xl font-display font-bold text-foreground">
               Espécies em Destaque
             </h2>
@@ -74,7 +74,7 @@ const Index = () => {
             ))}
           </div>
 
-          <footer id="about" className="bg-primary text-primary-foreground -mx-6 px-6 py-12 mt-16 rounded-t-2xl">
+          <footer id="about" className="bg-primary text-primary-foreground -mx-6 px-6 py-12 mt-16 rounded-t-2xl" aria-label="Rodapé do site">
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-lg font-display font-bold mb-3">Galinhas Ornamentais</h3>

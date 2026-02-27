@@ -14,8 +14,8 @@ const menuItems = [
 
 const Sidebar = ({ onNavigate }: SidebarProps) => {
   return (
-    <aside className="fixed left-0 top-[var(--header-height)] bottom-0 w-[var(--sidebar-width)] bg-sidebar overflow-y-auto z-40">
-      <nav className="py-6">
+    <aside className="fixed left-0 top-[var(--header-height)] bottom-0 w-[var(--sidebar-width)] bg-sidebar overflow-y-auto z-40" aria-label="Menu lateral">
+      <nav className="py-6" aria-label="Navegação secundária">
         <p className="px-5 mb-4 text-xs font-body font-semibold uppercase tracking-widest text-sidebar-foreground/50">
           Navegação
         </p>
