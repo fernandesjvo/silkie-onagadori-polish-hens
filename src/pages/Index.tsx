@@ -63,9 +63,9 @@ const Index = () => {
         <div className="p-6 max-w-5xl mx-auto space-y-10">
           <Slideshow />
 
-          <section id="breeds" className="space-y-3" aria-label="Espécies em destaque">
+          <section id="breeds" className="space-y-3" >
             <h2 className="text-2xl font-display font-bold text-foreground flex items-center gap-2">
-              <i className="fa-solid fa-star text-accent" role="img" />
+              <i className="fa-solid fa-star text-accent" role="img" aria-label="estrela" />
               Espécies em Destaque
             </h2>
             <p className="text-sm font-body text-muted-foreground">
