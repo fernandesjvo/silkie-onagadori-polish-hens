@@ -31,7 +31,6 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
       <div className="aspect-square overflow-hidden">
         <img
           src={imageSrc}
-          alt={imageAlt}
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           loading="lazy"
         />
@@ -56,8 +55,8 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
             </AccordionItem>
           ))}
         </Accordion>
-        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold" aria-label={buyAriaLabel}>
-          <ShoppingCart className="h-4 w-4 mr-2" aria-hidden="true" />
+        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold" >
+          <ShoppingCart className="h-4 w-4 mr-2" />
           Comprar
         </Button>
       </div>
