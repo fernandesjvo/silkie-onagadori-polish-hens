@@ -37,10 +37,10 @@ const Slideshow = () => {
           {`Slide ${current + 1} de ${slides.length}: ${slides[current].alt}`}
         </p>
         <h2 className="text-3xl font-display font-bold text-primary-foreground mb-2">
-          Conheça as Raças Mais Fascinantes
+          Conheça as Cocoricós mais fascinantes
         </h2>
         <p className="text-sm font-body text-primary-foreground/80">
-          Descubra a beleza e a história por trás dessas aves extraordinárias
+          Descubra a belezura divônica por trás dessas aves babadeiras
         </p>
       </div>
       <div className="absolute bottom-6 right-6 flex items-center gap-2">
