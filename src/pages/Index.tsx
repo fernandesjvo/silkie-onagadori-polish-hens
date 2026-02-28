@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Star } from "lucide-react";
 import Slideshow from "@/components/Slideshow";
 import BreedCard from "@/components/BreedCard";
 
@@ -63,7 +64,8 @@ const Index = () => {
           <Slideshow />
 
           <section id="breeds" className="space-y-3" aria-label="Espécies em destaque">
-            <h2 className="text-2xl font-display font-bold text-foreground">
+            <h2 className="text-2xl font-display font-bold text-foreground flex items-center gap-2">
+              <Star className="h-6 w-6 text-accent" aria-hidden="true" />
               Espécies em Destaque
             </h2>
             <p className="text-sm font-body text-muted-foreground">
