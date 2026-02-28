@@ -1,5 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
-import { Pause, Play } from "lucide-react";
+import { useState } from "react";
 import slide1 from "@/assets/slideshow-1.jpg";
 import slide2 from "@/assets/slideshow-2.jpg";
 import slide3 from "@/assets/slideshow-3.jpg";
@@ -12,27 +11,6 @@ const slides = [
 
 const Slideshow = () => {
   const [current, setCurrent] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-
-  // Respeitar prefers-reduced-motion: iniciar pausado
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mq.matches) {
-      setIsPlaying(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!isPlaying) return;
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [isPlaying]);
-
-  const togglePlayback = useCallback(() => {
-    setIsPlaying((prev) => !prev);
-  }, []);
 
   return (
     <section
@@ -66,17 +44,6 @@ const Slideshow = () => {
         </p>
       </div>
       <div className="absolute bottom-6 right-6 flex items-center gap-2">
-        <button
-          onClick={togglePlayback}
-          className="w-8 h-8 rounded-full bg-primary-foreground/20 hover:bg-primary-foreground/40 flex items-center justify-center transition-colors"
-          aria-label={isPlaying ? "Pausar carrossel" : "Reproduzir carrossel"}
-        >
-          {isPlaying ? (
-            <Pause className="h-4 w-4 text-primary-foreground" aria-hidden="true" />
-          ) : (
-            <Play className="h-4 w-4 text-primary-foreground" aria-hidden="true" />
-          )}
-        </button>
         {slides.map((_, i) => (
           <button
             key={i}
@@ -93,3 +60,4 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
+
