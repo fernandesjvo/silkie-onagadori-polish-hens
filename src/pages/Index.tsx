@@ -69,7 +69,7 @@ const Index = () => {
               Espécies em Destaque
             </h2>
             <p className="text-sm font-body text-muted-foreground">
-              Explore três das raças de galinhas ornamentais mais fascinantes do mundo.
+              Explore três das raças de galinhas ornamentais mais faraônicas do mundo.
             </p>
           </section>
 
@@ -87,7 +87,7 @@ const Index = () => {
           <div>
             <h3 className="text-lg font-display font-bold mb-3">Cocoricó Collections</h3>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
-              Descubra a beleza e a história por trás das raças de galinhas mais fascinantes do mundo.
+              Descubra a beleza e a história por trás das Cocoricós mais fascinantes do mundo.
             </p>
           </div>
           <div>
