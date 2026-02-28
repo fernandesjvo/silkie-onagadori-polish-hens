@@ -15,6 +15,7 @@ const breeds = [
     imageAlt: "Galinha Sedosa do Japão com plumagem branca e felpuda",
     description:
       "Conhecida por sua plumagem sedosa que lembra pelos ao invés de penas, a Sedosa do Japão é uma das raças mais antigas e dóceis do mundo. Possui pele e ossos escuros, além de cinco dedos em cada pé.",
+    buyAriaLabel: "Comprar galinha Sedosa do Japão",
     details: [
       { question: "Origem e História", answer: "Originária da China, a Sedosa é mencionada por Marco Polo em suas viagens no século XIII. Foi introduzida na Europa e Japão onde se tornou extremamente popular como ave ornamental e de companhia." },
       { question: "Características Físicas", answer: "Plumagem sedosa sem barbicelas, pele azul-escura/preta, crista em noz, cinco dedos, plumagem abundante nos tarsos. Peso médio de 1,3 a 1,8 kg." },
@@ -29,6 +30,7 @@ const breeds = [
     imageAlt: "Galo Onagadori com cauda extremamente longa e colorida",
     description:
       "A Onagadori é uma lendária raça japonesa cuja cauda pode atingir comprimentos impressionantes de até 10 metros. É considerada Monumento Natural do Japão desde 1952.",
+    buyAriaLabel: "Comprar galinha onagadori",
     details: [
       { question: "Origem e História", answer: "Desenvolvida na província de Kōchi, Japão, durante o período Edo. Criadores selecionaram cuidadosamente aves com o gene de cauda que não muda, permitindo crescimento contínuo por anos." },
       { question: "Características Físicas", answer: "As penas da cauda crescem continuamente sem muda, podendo ultrapassar 10 metros. Plumagem rica em tons de vermelho, dourado e preto. Porte elegante e altivo." },
@@ -43,6 +45,7 @@ const breeds = [
     imageAlt: "Galinha Polonesa com crista exuberante em forma de coroa",
     description:
       "A Polonesa é famosa por sua crista espetacular em forma de coroa. Apesar do nome, acredita-se que tenha origem na Holanda. É uma das aves ornamentais mais reconhecíveis do mundo.",
+    buyAriaLabel: "Comprar galinha Polonesa",
     details: [
       { question: "Origem e História", answer: "Apesar do nome, suas origens mais prováveis são a Holanda e a Europa Oriental. Aparece em pinturas holandesas do século XVI e foi popular entre a nobreza europeia." },
       { question: "Características Físicas", answer: "Crista proeminente em forma de V coberta por penas longas e volumosas. Disponível em diversas cores: branco, preto, dourado, prateado e combinações com bordas. Peso de 2 a 2,7 kg." },

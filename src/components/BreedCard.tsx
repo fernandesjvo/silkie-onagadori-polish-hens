@@ -20,9 +20,10 @@ interface BreedCardProps {
   imageAlt: string;
   description: string;
   details: BreedInfo[];
+  buyAriaLabel?: string;
 }
 
-const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, details }: BreedCardProps) => {
+const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, details, buyAriaLabel }: BreedCardProps) => {
   const headingId = `breed-heading-${id}`;
 
   return (
@@ -55,7 +56,7 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
             </AccordionItem>
           ))}
         </Accordion>
-        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold">
+        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold" aria-label={buyAriaLabel}>
           <ShoppingCart className="h-4 w-4 mr-2" aria-hidden="true" />
           Comprar
         </Button>
