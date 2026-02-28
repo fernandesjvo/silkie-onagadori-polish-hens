@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Star } from "lucide-react";
 import Slideshow from "@/components/Slideshow";
 import BreedCard from "@/components/BreedCard";
+import BreedCardSimple from "@/components/BreedCardSimple";
 
 import silkieImg from "@/assets/silkie.jpg";
 import onagadoriImg from "@/assets/onagadori.jpg";
@@ -74,7 +75,8 @@ const Index = () => {
           </section>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {breeds.map((breed) => (
+            <BreedCardSimple key={breeds[0].id} {...breeds[0]} />
+            {breeds.slice(1).map((breed) => (
               <BreedCard key={breed.id} {...breed} />
             ))}
           </div>
