@@ -29,7 +29,7 @@ const BreedCardSimple = ({ id, name, subtitle, imageSrc, imageAlt, description, 
             <div className="aspect-square overflow-hidden">
                 <img
                     src={imageSrc}
-                    alt={imageAlt}
+                  
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="lazy"
                 />
