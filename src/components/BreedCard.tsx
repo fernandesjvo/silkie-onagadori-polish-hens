@@ -37,7 +37,7 @@ const BreedCard = ({ id, name, subtitle, imageSrc, imageAlt, description, detail
         />
       </div>
       <div className="p-5">
-        <h3 id={headingId} className="text-xl font-display font-bold text-foreground">{name}</h3>
+        <h2 id={headingId} className="text-xl font-display font-bold text-foreground">{name}</h2>
         <p className="text-xs font-body text-accent font-semibold uppercase tracking-wider mt-1 mb-3">
           {subtitle}
         </p>
