@@ -28,7 +28,7 @@ const breeds = [
     name: "Onagadori",
     subtitle: "尾長鶏 • Cauda Longa Japonesa",
     imageSrc: onagadoriImg,
-    imageAlt: "Galo Onagadori com cauda extremamente longa e colorida",
+    imageAlt: "Galo Onagadori preto e branco com cauda extremamente longa",
     description:
       "A Onagadori é uma lendária raça japonesa cuja cauda pode atingir comprimentos impressionantes de até 10 metros. É considerada Monumento Natural do Japão desde 1952.",
     buyAriaLabel: "Comprar galinha onagadori",
