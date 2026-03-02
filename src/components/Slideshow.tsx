@@ -36,9 +36,9 @@ const Slideshow = () => {
         <p className="sr-only" aria-live="polite" aria-atomic="true">
           {`Slide ${current + 1} de ${slides.length}: ${slides[current].alt}`}
         </p>
-        <h2 className="text-3xl font-display font-bold text-primary-foreground mb-2">
+        <h1 className="text-3xl font-display font-bold text-primary-foreground mb-2">
           Conheça as Cocoricós mais fascinantes
-        </h2>
+        </h1>
         <p className="text-sm font-body text-primary-foreground/80">
           Descubra a belezura divônica por trás dessas aves babadeiras
         </p>
