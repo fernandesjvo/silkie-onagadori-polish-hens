@@ -65,7 +65,6 @@ const Index = () => {
 
           <section id="breeds" className="space-y-3" aria-label="Espécies em destaque">
             <h2 className="text-2xl font-display font-bold text-foreground flex items-center gap-2">
-              <i className="fa-solid fa-star text-accent" role="img" aria-label="estrela" />
               Espécies em Destaque
             </h2>
             <p className="text-sm font-body text-muted-foreground">
